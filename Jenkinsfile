@@ -16,7 +16,7 @@ node {
  
   stage('docker build/push') {
     docker.withRegistry('https://index.docker.io/v1/', 'frenzy669') {
-      def app = docker.build("frenzy669/docker-nodejs-demo:assaf-${commit_id}", '.').push()
+      def app = docker.build("frenzy669/docker-nodejs-demo:ligadsy-${commit_id}", '.').push()
     }
   }
   stage('docker run') {
