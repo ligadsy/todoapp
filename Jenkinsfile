@@ -21,7 +21,7 @@ node {
   }
   stage('docker run') {
     sh label: '', script: """
-     docker run --rm -tid --name docker_test -p 3000 frenzy669/docker-nodejs-demo:assaf-${commit_id}
+     docker run --rm -tid --name docker_test -p 3000 frenzy669/docker-nodejs-demo:ligadsy-${commit_id}
      docker kill docker_test
      """
     }
